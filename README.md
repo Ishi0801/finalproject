@@ -14,8 +14,8 @@
 ## ARTIFACTS
 
 - [Demonstration URL](<demo-url>)
-- [Presentation URL](<(https://www.overleaf.com/read/mqpvpmvwnpjn#4f0c10)>)
-- [Paper PDF](<article-pdf-url>) and [Paper Overleaf URL](<overleaf-article-url>)
+- [Presentation URL](<presentataion-url>)
+- [Paper PDF](<https://www.overleaf.com/read/mqpvpmvwnpjn#4f0c10>) 
 - [YouTube video Link](<youtube-video-url>)
 
 ## Team Contributions
