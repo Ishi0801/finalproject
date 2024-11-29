@@ -14,33 +14,36 @@
 ## ARTIFACTS
 
 - [Demonstration URL](<demo-url>)
-- [Presentation URL](<presentation-pdf-url>)
+- [Presentation URL](<(https://www.overleaf.com/read/mqpvpmvwnpjn#4f0c10)>)
 - [Paper PDF](<article-pdf-url>) and [Paper Overleaf URL](<overleaf-article-url>)
 - [YouTube video Link](<youtube-video-url>)
 
-## TEAM CONTRIBUTIONS
+## Team Contributions
 
-Provide in 250 characters or less contributions next to each team member
-- Demonstration:
-  1. Anushka Vaidya: 
-  2. Apoorva Asgekar:
-  3. Ishita Shah:
-  4. Swachandrika Rudra:
-- Presentation:
-  1. Anushka Vaidya: 
-  2. Apoorva Asgekar:
-  3. Ishita Shah:
-  4. Swachandrika Rudra: 
-- Paper:
-  1. Anushka Vaidya: 
-  2. Apoorva Asgekar:
-  3. Ishita Shah:
-  4. Swachandrika Rudra:
-- YouTube video:
-  1. Anushka Vaidya: 
-  2. Apoorva Asgekar:
-  3. Ishita Shah:
-  4. Swachandrika Rudra:
+### Demonstration
+- **Anushka Vaidya**: Led the development of heart rate monitoring and heat map visualization. Integrated real-time data sources and GenAI for predictive analytics.
+- **Apoorva Asgekar**: Developed interactive dashboards and statistical analysis features. Worked on integrating event data for comparative performance tracking.
+- **Ishita Shah**: Designed city-level navigation and tourist recommendation features. Developed the stadium-level routing system.
+- **Swachandrika Rudra**: Worked on the backend architecture and data processing pipeline for real-time sensor data. Optimized the user interface for smooth interaction.
+
+### Presentation
+- **Anushka Vaidya**: Presented the overview of the project and the heart rate visualization system. Explained the GenAI integration and its impact on real-time analytics.
+- **Apoorva Asgekar**: Presented the event statistics and dashboard components, emphasizing their use for real-time performance tracking.
+- **Ishita Shah**: Focused on the user experience for navigation systems, both at the city level and within the stadium.
+- **Swachandrika Rudra**: Discussed the backend technologies used for data processing and visualization rendering.
+
+### Paper
+- **Anushka Vaidya**: Wrote the introduction and design methodology sections, emphasizing the use of GenAI and visualization techniques.
+- **Apoorva Asgekar**: Focused on the event statistics, data pre-processing, and design decisions for the dashboards.
+- **Ishita Shah**: Contributed to writing about the stadium-level routing system and the integration of city navigation features.
+- **Swachandrika Rudra**: Authored the implementation challenges and solutions, and provided input on backend architecture.
+
+### YouTube Video
+- **Anushka Vaidya**: Coordinated the video shoot, presenting the heart rate monitoring and heat map features.
+- **Apoorva Asgekar**: Demonstrated the event dashboard and performance tracking features in the video.
+- **Ishita Shah**: Showcased the city-level navigation and tourism recommendation system in the video.
+- **Swachandrika Rudra**: Assisted with video editing and highlighted the backend system in the final demonstration.
+
 
 # **LA 2028 Olympics Games Dashboard**
 
