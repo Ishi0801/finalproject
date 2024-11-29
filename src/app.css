@@ -1,0 +1,171 @@
+/* Main container */
+.main-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Content wrapper */
+.banner-content {
+  max-width: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.banner-image img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Title and subtitle styling */
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Countdown container */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Countdown styling */
+.countdown {
+  display: flex;
+  gap: 10px;
+}
+
+.countdown-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  width: 60px;
+}
+
+.countdown-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.countdown-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #ff5a5f;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff4045;
+}
+
+/* Countdown container to center and style the entire countdown section */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Countdown box styling */
+.countdown {
+  display: flex;
+  gap: 15px; /* Space between countdown items */
+  background-color: #f1f1f1;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual countdown items (Days, Hours, Mins, Secs) */
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  min-width: 60px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Countdown numbers */
+.countdown-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Countdown label styling (Days, Hours, etc.) */
+.countdown-label {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.main-banner {
+  background-image: url('/workspaces/dsci554-hw/PROJECT/public/data/bg4.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-top: none;
+  padding: 20px;
+}
+
+/* Optional custom styles */
+#venue-tabs .nav-link {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+#venue-tabs .nav-link.active {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  color: #333;
+}
+
+.tab-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
