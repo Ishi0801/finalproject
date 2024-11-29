@@ -4,12 +4,12 @@
 ## PROJECT INFORMATION
 
 - Project title:
-- Group name:
+- Group name: Data Viz Olympians
 - Team names:
-  1. member-name member-username@usc.edu
-  2. member-name member-username@usc.edu
-  3. member-name member-username@usc.edu
-  4. member-name member-username@usc.edu
+  1. Anushka Vaidya alvaidya@usc.edu
+  2. Apoorva Asgekar aasgekar@usc.edu
+  3. Ishita Shah ishitasa@usc.edu
+  4. Swachandrika Rudra swachand@usc.edu
 
 ## ARTIFACTS
 
@@ -22,22 +22,22 @@
 
 Provide in 250 characters or less contributions next to each team member
 - Demonstration:
-  1. member-name: 
-  2. member-name:
-  3. member-name:
-  4. member-name:
+  1. Anushka Vaidya: 
+  2. Apoorva Asgekar:
+  3. Ishita Shah:
+  4. Swachandrika Rudra:
 - Presentation:
-  1. member-name: 
-  2. member-name:
-  3. member-name:
-  4. member-name: 
+  1. Anushka Vaidya: 
+  2. Apoorva Asgekar:
+  3. Ishita Shah:
+  4. Swachandrika Rudra: 
 - Paper:
-  1. member-name: 
-  2. member-name:
-  3. member-name:
-  4. member-name:
+  1. Anushka Vaidya: 
+  2. Apoorva Asgekar:
+  3. Ishita Shah:
+  4. Swachandrika Rudra:
 - YouTube video:
-  1. member-name: 
-  2. member-name:
-  3. member-name:
-  4. member-name:
+  1. Anushka Vaidya: 
+  2. Apoorva Asgekar:
+  3. Ishita Shah:
+  4. Swachandrika Rudra:
