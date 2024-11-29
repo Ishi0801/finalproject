@@ -41,3 +41,103 @@ Provide in 250 characters or less contributions next to each team member
   2. Apoorva Asgekar:
   3. Ishita Shah:
   4. Swachandrika Rudra:
+
+# **LA 2028 Olympics Games Dashboard**
+
+This project provides an interactive visualization dashboard for the Olympic Games, showcasing crowd density, athlete statistics, and medal tracking through a combination of React, D3.js, and standalone HTML visualizations.
+
+## **How to Run the Project**
+
+### **Prerequisites**
+
+Ensure you have the following installed:
+
+- **Node.js**: Download and install from [nodejs.org](https://nodejs.org/).
+- **npm** or **yarn**: Node package manager or Yarn package manager.
+
+### **Steps**
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/DSCI-554/project-datavizolympians.git
+
+
+2. Install Dependencies
+
+    ```bash
+    npm install
+
+3. Start the Development Server
+
+    ```bash
+    npm start
+
+4. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the dashboard.
+
+
+## **Crowd Heart Rate Map Visualization**
+
+We have implemented a **crowd and heart rate heat map visualization** of the Olympic stadium. This visualization includes:
+
+- **Heat map** depicting crowd density in each section of the stadium.
+- On hovering over each section, you can view the **average heart rate** of attendees in that section.
+
+### Preview
+
+![Crowd and Heart Rate Heat Map](crowd_heart_rate_map_image.jpg)
+
+
+## **Athlete Statistics Visualizations**
+
+We have developed visualizations to showcase athlete statistics for attendees, using the following files:
+
+1. **`country.html`**: Displays country-wise statistics.
+2. **`gender.html`**: Explores gender-based distributions.
+3. **`medal.html`**: Focuses on medal-related insights.
+
+### **Athlete Statistics Carousel**
+
+The **`athlete_stat.html`** file combines these visualizations into a carousel for seamless navigation and presentation.
+
+#### To Run the Carousel:
+
+1. Download the following files:
+   - `athlete_stat.html`
+   - `country.html`
+   - `gender.html`
+   - `medal.html`
+2. Place all these files in the same directory.
+3. Open `athlete_stat.html` in your browser to view the carousel.
+
+## **Maps Routing for LA to Olympic Stadiums**
+
+We have implemented an additional feature for **maps routing**, showcasing routes from various places in Los Angeles to the stadiums where the Olympics are happening. This functionality is fully implemented.
+
+### Preview
+
+![Athlete Statistics Carousel - Medal Statistics](athlete_statistics_carousel_image1.jpg)
+![Athlete Statistics Carousel - Country Statistics](athlete_statistics_carousel_image2.jpg)
+![Athlete Statistics Carousel - Gender Statistics](athlete_statistics_carousel_image3.jpg)
+
+## **Research and Presentation**
+
+We have attached our [research paper](https://www.overleaf.com/read/mqpvpmvwnpjn#4f0c10) and **presentation** in the repository. These documents discuss the motivations behind each visualization element and provide detailed insights into their design and purpose.
+
+## **Current Challenges and Next Steps**
+
+### Current Challenges:
+- Integrating the different elements of the project (e.g., heat maps, athlete statistics, external map routing) into a cohesive final web page.
+- Ensuring a consistent and interactive user experience.
+
+### Next Steps:
+1. Work on resolving the integration challenges as discussed above.
+2. Fine-tune all elements in the presentation and paper based on feedback.
+3. Enhance the overall visual and functional aspects of the dashboard.
+4. The conclusion of the paper will be added once the entire implementation process is completed.
+
+## **Generative AI Resources**
+
+We utilized Generative AI resources to aid in various aspects of the project. For more details, visit:
+[Generative AI Resources](https://drive.google.com/drive/folders/1-DTx7jNnMfjKjmm4SeGTOT5iS6HJx4Gf?usp=sharing)
+
