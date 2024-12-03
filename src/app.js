@@ -14,9 +14,9 @@ function App() {
       <Header />
       <MainBanner />
       <div className="container my-4">
-        {/* <section id="health-safety">
+        <section id="health-safety">
           <HealthSafetyMonitor />
-        </section> */}
+        </section>
         <section id="venues">
           <VenueNavigation />
         </section>
