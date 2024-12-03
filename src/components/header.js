@@ -31,6 +31,9 @@ const Header = () => {
               <li className="nav-item">
                 <a className="nav-link" href="#crowd-management">Crowd Management</a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#sport">Crowd Heart Rate</a>
+              </li>
             </ul>
           </div>
         </div>
