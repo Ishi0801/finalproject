@@ -7,8 +7,6 @@ import * as d3 from 'd3';
 // Sample venue and floor plans
 const venues = {
   'LA Memorial Coliseum': {
-    description:
-      'The Los Angeles Memorial Coliseum is one of the most illustrious stadiums in the United States. Built in 1923, it serves as a living memorial to all who served in the U.S. Armed Forces during World War I. It is the home stadium for the USC Trojans football team, hosted the first Super Bowl, and was used in the 1932 and 1984 Olympic Games. In 2028, it will become the first venue in history to host the Track and Field competitions and the Opening Ceremony in three Olympic Games.',
     floorPlans: [
       { level: 1, image: '/data/0.jpg' },
       { level: 2, image: '/data/1.jpg' },
@@ -107,7 +105,6 @@ const VenueNavigation = () => {
 
   return (
     <Container className="my-4">
-      <h2 className="mb-4">Venues & Navigation</h2>
       <Tabs
         defaultActiveKey={activeVenue}
         id="venue-tabs"
@@ -119,8 +116,6 @@ const VenueNavigation = () => {
         {Object.keys(venues).map((venue, index) => (
           <Tab eventKey={venue} title={venue} key={index}>
             <div className="p-3">
-              <h4>{venue}</h4>
-              <p>{venues[venue].description}</p>
               {currentPlan ? (
                 <div style={{ textAlign: 'center', marginTop: '20px', position: 'relative' }}>
                   <img
@@ -181,12 +176,6 @@ const VenueNavigation = () => {
           <div className="p-3">
             <h4>Crowd Management for the 2028 Olympics</h4>
             <CrowdManagementChart />
-          </div>
-        </Tab>
-        <Tab eventKey="VenueRoutes" title="Venue Routes">
-          <div className="p-3">
-            <h4>Venue Routes</h4>
-            <Map />
           </div>
         </Tab>
       </Tabs>
