@@ -13,8 +13,8 @@ function App() {
     } else if (currentPage === "map") {
       setCurrentPage("venue"); // Transition from map to venue page
     } else if (currentPage === "venue") {
-      setCurrentPage("ecg"); // Transition from venue to ECG page
-    } else if (currentPage === "ecg") {
+    //   setCurrentPage("ecg"); // Transition from venue to ECG page
+    // } else if (currentPage === "ecg") {
       setCurrentPage("test2"); // Transition from ECG to Test2 page
     } else if (currentPage === "test2") {
       setCurrentPage("test_sport"); // Transition from Test2 to Test Sport page
@@ -26,10 +26,10 @@ function App() {
       setCurrentPage("landing"); // Go back to landing page
     } else if (currentPage === "venue") {
       setCurrentPage("map"); // Go back to map page
-    } else if (currentPage === "ecg") {
-      setCurrentPage("venue"); // Go back to venue page
+    // } else if (currentPage === "ecg") {
+    //   setCurrentPage("venue"); // Go back to venue page
     } else if (currentPage === "test2") {
-      setCurrentPage("ecg"); // Go back to ECG page
+      setCurrentPage("venue"); // Go back to ECG page
     } else if (currentPage === "test_sport") {
       setCurrentPage("test2"); // Go back to Test2 page
     }
@@ -43,8 +43,8 @@ function App() {
             ? "Explore Nearby Venues"
             : currentPage === "venue"
             ? "Venue Navigation"
-            : currentPage === "ecg"
-            ? "Crowd Management"
+            // : currentPage === "ecg"
+            // ? "Crowd Management"
             : currentPage === "test2"
             ? "Olympics Trends"
             : currentPage === "test_sport"
@@ -80,7 +80,7 @@ function App() {
             </div>
           </div>
         )}
-        {currentPage === "ecg" && (
+        {/* {currentPage === "ecg" && (
           <div className="ecg-page fade-in">
             <iframe
               src="/crowd_heart_rate_map_with_ecg_animation.html"
@@ -100,7 +100,7 @@ function App() {
               </button>
             </div>
           </div>
-        )}
+        )} */}
         {currentPage === "test2" && (
           <div className="test2-page fade-in">
             <iframe
