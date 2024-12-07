@@ -8,7 +8,7 @@
     "serve": "browser-sync start ./ -s --files './' --directory --watch --port 2000",
     "start": "react-scripts start",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build --dotfiles",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
