@@ -1,7 +1,7 @@
 {
   "name": "a4",
   "version": "1.0.0",
-  "homepage": "https://Ishi0801.github.io/finalproject/",
+  "homepage": ".",
   "description": "A COVID-19 dashboard using React, Bootstrap, and D3",
   "main": "index.js",
   "scripts": {
