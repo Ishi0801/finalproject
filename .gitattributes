@@ -1,0 +1,2 @@
+public/crowd_heart_rate_map_with_ecg_animation.html filter=lfs diff=lfs merge=lfs -text
+public/data/livefeed.mov filter=lfs diff=lfs merge=lfs -text
