@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/finalproject/static/css/main.15d5c785.css",
+    "main.js": "/finalproject/static/js/main.60a81f96.js",
+    "static/media/wrestling.svg": "/finalproject/static/media/wrestling.9f5b24e2afaa73a72584dc0b47487ae7.svg",
+    "static/media/boxing.svg": "/finalproject/static/media/boxing.fb5e10bef9f6a0a33927734c422927eb.svg",
+    "static/media/tennis.svg": "/finalproject/static/media/tennis.e1703647740f2dfa663e3ba67fb0b0c1.svg",
+    "static/media/weightlifting.svg": "/finalproject/static/media/weightlifting.1b6dee96360c4f0adb61455f50f0a927.svg",
+    "static/media/beach_volleyball.svg": "/finalproject/static/media/beach_volleyball.624a81b38b60b4ed8fa5c0fd56b1ce38.svg",
+    "static/media/rugby_sevens.svg": "/finalproject/static/media/rugby_sevens.083881c8d17e24849eaeb4b87171ee1d.svg",
+    "static/media/volleyball.svg": "/finalproject/static/media/volleyball.65fed2a208f5e46bd37946eb547e01ac.svg",
+    "static/media/athletics.svg": "/finalproject/static/media/athletics.619c38c2b9ea16e7c66b2da4c9a5e02e.svg",
+    "static/media/artistic_gymnastics.svg": "/finalproject/static/media/artistic_gymnastics.c764093b22565f149b46ea2b761375bd.svg",
+    "static/media/swimming.svg": "/finalproject/static/media/swimming.2264068d40be6a73fe8b2cc6cae2c540.svg",
+    "index.html": "/finalproject/index.html",
+    "main.15d5c785.css.map": "/finalproject/static/css/main.15d5c785.css.map",
+    "main.60a81f96.js.map": "/finalproject/static/js/main.60a81f96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15d5c785.css",
+    "static/js/main.60a81f96.js"
+  ]
+}
