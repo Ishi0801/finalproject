@@ -20,14 +20,14 @@
 }
 
 /* Overlay Content */
-.overlay {
+/* .overlay {
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
+} */
 
 /* Title (Logo section) */
 .title {
@@ -40,7 +40,7 @@
 
 /* Countdown Timer Container */
 .countdown-container {
-    background: rgba(241, 231, 231, 0.362); /* Semi-transparent background */
+    background: rgba(241, 231, 231, 0.640); /* Semi-transparent background */
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -103,4 +103,41 @@
     to {
         opacity: 1;
     }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.get-started {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-started:hover {
+    background-color: #0056b3;
+}
+
+.overlay {
+  position: absolute;  /* Position the overlay over the video */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1;  /* Ensure it appears on top of the video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px; /* Adjust padding to avoid content touching edges */
+  overflow: auto; /* Ensure content inside can scroll if needed */
 }

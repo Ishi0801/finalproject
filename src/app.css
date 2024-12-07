@@ -1,4 +1,4 @@
-/* General App Styles */
+/* General Layout */
 .app {
   display: flex;
   flex-direction: column;
@@ -7,20 +7,124 @@
   overflow: hidden;
 }
 
-/* Header Styles */
+/* Header Styles - Consolidated */
 .app-header {
-  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #333;
   color: white;
-  padding: 10px 20px;
-  text-align: center;
+  height: 80px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .app-header h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-/* Footer Styles */
+/* Navigation Styles - Consolidated */
+.side-nav, .navbar {
+  background-color: #444;
+  padding: 10px;
+  color: white;
+}
+
+.side-nav ul, .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav li, .navbar li {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.side-nav li:hover,
+.side-nav li.active,
+.navbar li:hover {
+  background-color: #666;
+  border-radius: 3px;
+}
+
+/* Content Areas */
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Page Layouts - Consolidated */
+.map-page,
+.ecg-page,
+.test2-page,
+.test-sport-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* iframe Styles - Consolidated */
+.ecg-page iframe,
+.test2-page iframe,
+.test-sport-page iframe {
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - 120px);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles - Consolidated */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.fancy-button {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.back-button { color: #ff7e5f; }
+.next-button { color: #6a11cb; }
+
+/* Button Hover Effects */
+.fancy-button:hover {
+  color: inherit;
+}
+
+.fancy-button:hover .button-text {
+  opacity: 1;
+}
+
+.fancy-button:hover .arrow {
+  transform: scale(1.2);
+}
+
+/* Footer */
 .app-footer {
   background-color: #f8f9fa;
   color: #6c757d;
@@ -30,133 +134,7 @@
   border-top: 1px solid #dee2e6;
 }
 
-/* Main Content Styles */
-.app-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-/* Map Page Styles */
-.map-page {
-  flex: 1; /* Take remaining vertical space between header and footer */
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Ensure it uses full available height */
-}
-
-.map-page > .leaflet-container {
-  flex: 1; /* Let the map take remaining space */
-  height: calc(100vh - 120px); /* Adjust height for header and footer */
-}
-
-/* Button Container */
-.button-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.back-button,
-.next-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.back-button:hover,
-.next-button:hover {
-  background-color: #0056b3;
-}
-
-/* ECG Page Styles */
-.ecg-page,
-.test2-page {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Ensure it fills available space */
-}
-
-/* Fix iframe dimensions */
-.ecg-page iframe,
-.test2-page iframe {
-  flex: 1;
-  width: 100%; /* Full width */
-  height: calc(100vh - 120px); /* Adjust for header and footer */
-  border: none;
-}
-
-/* Ensure button container stays fixed below iframe */
-.ecg-page .button-container,
-.test2-page .button-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  background-color: #f8f9fa; /* Matches footer background */
-  border-top: 1px solid #dee2e6;
-}
-
-/* Test Sport Page Styles */
-.test-sport-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-  padding: 20px; /* Add padding for spacing */
-  background-color: #f5f5f5; /* Subtle background color for better contrast */
-}
-
-.test-sport-page iframe {
-  width: 100%;
-  max-width: 1200px; /* Limit width for large screens */
-  height: calc(100vh - 200px); /* Dynamically adjust height for header/footer */
-  border: none;
-  border-radius: 10px; /* Rounded corners for better design */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  overflow: hidden; /* Prevent content overflow */
-}
-
-/* Ensure button container stays consistent */
-.test-sport-page .button-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-  background-color: #f8f9fa; /* Matches footer background */
-  border-top: 1px solid #dee2e6;
-}
-
-.venue-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  background-color: #f5f5f5;
-}
-
-/* Consistent button styling */
-.button-container .back-button,
-.button-container .next-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.button-container .back-button:hover,
-.button-container .next-button:hover {
-  background-color: #0056b3;
+/* Utility Classes */
+.leaflet-routing-container {
+  display: none !important;
 }

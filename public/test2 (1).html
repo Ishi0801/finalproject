@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #ffffff;
         }
 
         h1 {
@@ -32,12 +32,13 @@
             overflow: hidden;
             border-radius: 8px;
             background: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
         }
 
         .carousel {
             display: flex;
             transition: transform 0.5s ease-in-out;
+            height: 600px;
         }
 
         .carousel-item {
@@ -48,14 +49,15 @@
             height: 600px; /* Adjust height to fit content */
             box-sizing: border-box;
             overflow: hidden; /* Ensure content doesn't overflow */
+            background-color: #ffffff; /* Added background color */
         }
 
         iframe {
             width: 90%; /* Adjust iframe width */
             height: 90%; /* Adjust iframe height */
-            border: none;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
+            border: none; /* Ensure no border */
+            box-shadow: none; /* Remove box shadow */
+            border-radius: 8px; /* Keep rounded corners if desired */
         }
 
         /* Carousel Controls */
@@ -111,13 +113,13 @@
                 </iframe>
             </div>
             <!-- Slide 4 -->
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
                 <iframe 
                     src="gender.html" 
                     title="Gender Tracking Visualization"
                     sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation">
                 </iframe>
-            </div>
+            </div> -->
         </div>
 
         <!-- Carousel Controls -->

@@ -1,37 +1,33 @@
 import React, { useState } from "react";
-import LandingPage from "./components/landing.js"; // Landing Page Component
-import Map from "./components/Map.js"; // Map Component
-import VenueNavigation from "./components/venue.js"; // Venue Navigation Component
-import "./app.css"; // CSS for fade-in and general styles
+import LandingPage from "./components/landing.js";
+import Map from "./components/Map.js";
+import VenueNavigation from "./components/venue.js";
+import "./app.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("landing");
 
   const handleStart = () => {
     if (currentPage === "landing") {
-      setCurrentPage("map"); // Transition from landing to map page
+      setCurrentPage("map");
     } else if (currentPage === "map") {
-      setCurrentPage("venue"); // Transition from map to venue page
+      setCurrentPage("venue");
     } else if (currentPage === "venue") {
-    //   setCurrentPage("ecg"); // Transition from venue to ECG page
-    // } else if (currentPage === "ecg") {
-      setCurrentPage("test2"); // Transition from ECG to Test2 page
+      setCurrentPage("test2");
     } else if (currentPage === "test2") {
-      setCurrentPage("test_sport"); // Transition from Test2 to Test Sport page
+      setCurrentPage("test_sport");
     }
   };
 
   const handleBack = () => {
     if (currentPage === "map") {
-      setCurrentPage("landing"); // Go back to landing page
+      setCurrentPage("landing");
     } else if (currentPage === "venue") {
-      setCurrentPage("map"); // Go back to map page
-    // } else if (currentPage === "ecg") {
-    //   setCurrentPage("venue"); // Go back to venue page
+      setCurrentPage("map");
     } else if (currentPage === "test2") {
-      setCurrentPage("venue"); // Go back to ECG page
+      setCurrentPage("venue");
     } else if (currentPage === "test_sport") {
-      setCurrentPage("test2"); // Go back to Test2 page
+      setCurrentPage("test2");
     }
   };
 
@@ -43,8 +39,6 @@ function App() {
             ? "Explore Nearby Venues"
             : currentPage === "venue"
             ? "Venue Navigation"
-            // : currentPage === "ecg"
-            // ? "Crowd Management"
             : currentPage === "test2"
             ? "Olympics Trends"
             : currentPage === "test_sport"
@@ -52,55 +46,34 @@ function App() {
             : "Olympics Dashboard"}
         </h1>
       </header>
+
       <main className="app-content">
+        {/* Landing Page */}
         {currentPage === "landing" && <LandingPage onStart={handleStart} />}
+
+        {/* Map Page */}
         {currentPage === "map" && (
           <div className="map-page fade-in">
             <Map />
             <div className="button-container">
-              <button className="back-button" onClick={handleBack}>
-                Go Back
+              <button className="fancy-button back-button" onClick={handleBack}>
+                <span className="arrow">&#8592;</span>
+                <span className="tooltip">Go Back</span>
               </button>
-              <button className="next-button" onClick={handleStart}>
-                Next
+              <button className="fancy-button next-button" onClick={handleStart}>
+                <span className="arrow">&#8594;</span>
+                <span className="tooltip">Next Page</span>
               </button>
             </div>
           </div>
         )}
+
+        {/* Venue Navigation Page */}
         {currentPage === "venue" && (
-          <div className="venue-container fade-in">
-            <VenueNavigation />
-            <div className="button-container">
-              <button className="back-button" onClick={handleBack}>
-                Go Back
-              </button>
-              <button className="next-button" onClick={handleStart}>
-                Next
-              </button>
-            </div>
-          </div>
+          <VenueNavigation onNext={handleStart} onBack={handleBack} />
         )}
-        {/* {currentPage === "ecg" && (
-          <div className="ecg-page fade-in">
-            <iframe
-              src="/crowd_heart_rate_map_with_ecg_animation.html"
-              title="Crowd Heart Rate Map"
-              style={{
-                width: "100%",
-                height: "100%",
-                border: "none",
-              }}
-            ></iframe>
-            <div className="button-container">
-              <button className="back-button" onClick={handleBack}>
-                Go Back
-              </button>
-              <button className="next-button" onClick={handleStart}>
-                Next
-              </button>
-            </div>
-          </div>
-        )} */}
+
+        {/* Test2 Page */}
         {currentPage === "test2" && (
           <div className="test2-page fade-in">
             <iframe
@@ -113,15 +86,19 @@ function App() {
               }}
             ></iframe>
             <div className="button-container">
-              <button className="back-button" onClick={handleBack}>
-                Go Back
+            <button className="fancy-button back-button" onClick={handleBack}>
+                <span className="arrow">&#8592;</span>
+                <span className="tooltip">Go Back</span>
               </button>
-              <button className="next-button" onClick={handleStart}>
-                Next
+              <button className="fancy-button next-button" onClick={handleStart}>
+                <span className="arrow">&#8594;</span>
+                <span className="tooltip">Next Page</span>
               </button>
             </div>
           </div>
         )}
+
+        {/* Test Sport Page */}
         {currentPage === "test_sport" && (
           <div className="test-sport-page fade-in">
             <iframe
@@ -131,18 +108,20 @@ function App() {
                 width: "100%",
                 height: "100%",
                 border: "none",
-                display: "block", 
-                margin: "0 auto", 
+                display: "block",
+                margin: "0 auto",
               }}
             ></iframe>
             <div className="button-container">
-              <button className="back-button" onClick={handleBack}>
-                Go Back
+            <button className="fancy-button back-button" onClick={handleBack}>
+                <span className="arrow">&#8592;</span>
+                <span className="tooltip">Go Back</span>
               </button>
             </div>
           </div>
         )}
       </main>
+
       <footer className="app-footer">
         <p>© 2024 Olympics Dashboard. All rights reserved.</p>
       </footer>
